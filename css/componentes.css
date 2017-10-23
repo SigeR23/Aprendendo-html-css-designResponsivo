@@ -1,0 +1,368 @@
+/*
+	P L A N O 
+*/
+.plano {
+	position: relative;
+
+	border: 1px solid #95a4a5;
+	padding: 10px;
+
+	font-size: 1.4rem;
+
+} 
+
+@media(max-width: 767px) {
+	.plano:not(.ultimo-plano){
+		margin-bottom: 40px;
+	}
+}
+
+	.plano--mais-popular::after {
+		position: absolute;
+		top: -10px;
+		left: -10px;
+
+		padding: 0 10px;
+
+		background-color: #c20303;
+		color: #fff;
+
+		font-size: 0.7142em;
+		line-height: 2.5;
+		
+		content: "MAIS POPULAR";
+	}
+
+	.plano__cabecalho {
+		margin: -10px;
+		margin-bottom: 0;
+		
+		background-color: #95a4a5;
+		color: #fff;
+
+		text-align: center;
+		line-height: 2.5;
+		font-weight: normal;
+		font-size: 2em;
+	}
+
+	
+
+	.plano__preco {
+		margin: 20px 0;
+
+		text-align: center;
+		font-size: 2em;
+		
+	}
+
+	.plano__caracteristicas {
+		padding: 0;
+		margin: 20px 0;
+
+		font-size: 1em;
+
+		list-style: none;
+
+	}
+
+	.plano__caracteristicas > li {
+		text-align: center;
+	}
+
+	 .plano__rodape {
+		text-align: center;
+	}
+
+
+/*
+	B O T A O
+*/
+.botao {
+	display: inline-block;
+	padding: 0.8em 1.2em;
+
+	border: none;
+
+	background-color: #95a4a5;
+	color: #fff;
+
+	line-height: normal;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+.botao--submit {
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+	.botao:hover, .botao:focus	{
+		background-color: #aaa;
+		color: #fff;
+		
+		text-decoration: none;
+		
+	}
+
+	.botao--destaque, .botao--login  {
+		background-color: #127d00;
+		
+	}
+
+	.botao--destaque:hover, .botao--destaque:focus,
+	.botao--login:hover, .botao--login:focus {
+		background-color: #aaa;
+	}
+
+	.botao--principal {
+		border-radius: 10px;
+
+		background-color: #004b86;
+
+	}
+
+	.botao--principal:hover, botao--principal:focus {
+		background-color: #003b6a;
+	}
+
+
+
+/*
+	C H A M A D A
+*/
+.chamada {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.chamada {
+		padding-left: 10%;
+		padding-right: 10%;
+
+		font-size: 2.2rem;
+		}
+	}
+
+	.chamada__titulo {
+		margin: 0;
+
+		color: #fff;
+
+		font-size: 3.375em;
+		line-height: 0.9;
+		text-shadow: 1px 1px #313131;
+	}
+
+	.chamada__subtitulo {
+		margin: 60px 0;
+
+		color: #fff;
+
+		font-size: 1em;
+	}
+
+	.chamada__acao {
+		font-size: 1em;
+	}
+
+	
+/*
+	 D E P O I M E N T O
+*/
+.depoimento {
+	padding: 6% 15%;
+
+	font-size: 2.2rem;
+}
+
+@media (min-width: 992px) {
+	.depoimento {
+		
+		font-size: 2.8rem;
+		
+	}
+
+}
+	.depoimento > blockquote {
+		position: relative;
+
+		margin: 0;
+		padding: 0 60px;
+		text-align: center;
+
+		font-size: 1em;
+	}
+
+	.depoimento > blockquote::before {
+		position: absolute;
+		left: -0.1em;
+		top: -0.35em;
+
+		color: #ccc;
+
+		font-size: 8em;
+
+		content: "\201C";
+
+	}
+ 
+	.depoimento__autor {
+
+		margin-top: 40px;
+
+		text-align: center;
+		font-size: 0.7272em;
+	}
+
+	.depoimento__autor > img {
+		border-radius: 50%;
+	}
+
+	.depoimento__autor > p {
+		margin-top: 10px;
+	}
+
+/*
+	 R O D A P E
+*/
+.rodape {
+	font-size: 1.4rem;
+	padding: 3% 0;
+}
+	.rodape__texto {
+		margin-top: 0;
+		margin-bottom: 10px;
+
+		color: #fff;
+
+		text-align: center;
+		font-size: 1em;
+	}
+
+
+/*
+	N A V E G A C A O
+*/
+.navegacao {
+
+}
+
+.navegacao--assinatura {
+	text-align: center;
+}
+
+	.navegacao__menu {
+		float: right;
+	}
+
+/*
+	B O T A O - C H A V E A D O R
+*/
+
+.botao-chaveador {
+	height: 24px;
+	width: 24px;
+
+	border: 0;
+
+	background-image: none;
+	background-image: url(../img/bars.png)
+}
+
+@media (min-width: 992px) {
+	.botao-chaveador {
+		display: none;
+	}
+}
+
+/*
+	M E N U
+*/
+.menu {
+	margin: 0;
+
+	font-size: 1.4rem;
+
+	list-style: none;
+}
+
+@media(max-width: 991px) {
+
+	.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+
+
+	display: block;
+	padding: 20px;
+	width: 200px;
+	border-right: 1px solid #eee;
+
+	background-color: #fbfbfb;
+	
+	}
+
+	.menu--exibindo {
+		display: none;
+	}
+}
+
+@media(min-width: 992px) {
+	.menu__item {
+		display: inline-block;
+		padding-right: 20px;
+	}
+
+	.menu__item:last-of-type {
+		padding-right: 0;
+	}
+}
+
+/*
+	T I T U L O - F O R M U L A R I O
+*/
+
+.titulo-formulario {
+	margin: 0;
+	margin-bottom: 40px;
+
+	border-bottom: 1px solid #ccc;
+
+	font-size 2.6rem;
+	font-weight: normal;
+	color: #004b86;
+}
+
+/*
+	G R U P O - E N T R A D A
+*/
+.grupo-entrada {
+	margin-bottom: 15px;
+}
+.grupo-entrada > label {
+	display: block;
+	line-height: 1.3em;
+
+	font-weight: bold;
+}
+
+/*
+	C A M P O
+*/
+
+.campo {
+	display: block;
+	width: 100%;
+	height: 2.8em;
+
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+	font-size: 1.4em;
+}
